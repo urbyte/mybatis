@@ -161,7 +161,7 @@ public class TypeAliasRegistry {
 
 	//注册类型别名
   public void registerAlias(Class<?> type) {
-    //如果没有类型别名，用Class.getSimpleName来注册
+    //如果没有类型别名，用Class.getSimpleName来注册，即类名
     String alias = type.getSimpleName();
 	//或者通过Alias注解来注册(Class.getAnnotation)
     Alias aliasAnnotation = type.getAnnotation(Alias.class);
